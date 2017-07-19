@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_video_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <!-- 视频播放控件 -->
+
+    <com.cf.supervideolibrary.VV
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 视频顶部布局 -->
+
+    <include layout="@layout/view_super_player_top" />
+
+    <!-- 视频中间布局 -->
+
+    <include layout="@layout/view_super_player_center" />
+
+    <!-- 视频底部布局 -->
+
+    <include
+        android:id="@+id/layout_controller"
+        layout="@layout/view_super_player_bottom" />
+
+</RelativeLayout>

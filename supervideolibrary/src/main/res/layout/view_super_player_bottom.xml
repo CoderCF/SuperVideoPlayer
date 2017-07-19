@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_video_bottom_box"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:background="#88000000" >
+
+    <ImageButton
+        android:id="@+id/play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:src="@mipmap/btn_play" />
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/play_pause"
+        android:text="06:21"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/SeekBarAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/total_time"
+        android:layout_toRightOf="@+id/current_time" />
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ibtn_volume"
+        android:text="10:10"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/fullScreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@mipmap/btn_full_screen" />
+     <ImageButton
+        android:id="@+id/ibtn_volume"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/fullScreenButton"
+        android:background="@mipmap/icon_volume1" />
+
+</RelativeLayout>
